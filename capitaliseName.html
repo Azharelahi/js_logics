@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalise Name</title>
+</head>
+<body>
+
+    <h1>Capitalise Your Name</h1>
+
+    <script>
+        function capitalise(name) {
+            return name.charAt(0).toUpperCase() + name.slice(1);
+        }
+
+        let name = prompt("Enter your name in lowercase");
+
+        if (name !== name.toLowerCase()) {
+            alert("Please use lowercase only");
+        } else {
+            alert(capitalise(name));
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First and Last Element</title>
+</head>
+<body>
+
+    <h1>Mera Random Array</h1>
+
+    <script>
+        function randomArray() {
+            let arr = [];
+            let size = Math.floor(Math.random() * 8) + 3;
+
+            for (let i = 0; i < size; i++) {
+                arr.push(Math.floor(Math.random() * 100));
+            }
+
+            return arr;
+        }
+
+        function firstAndLast(arr) {
+            return [arr[0], arr.slice().pop()];
+        }
+
+        let arr = randomArray();
+        let result = firstAndLast(arr);
+
+        alert(
+            "Array: " + arr +
+            "\nFirst: " + result[0] +
+            "\nLast: " + result[1]
+        );
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+
+    <h1>BMI Calculator</h1>
+
+    <script>
+        function calculateBMI(weight, height) {
+            return weight / (height * height);
+        }
+
+        let weight = parseFloat(prompt("Enter weight in kg"));
+        let height = parseFloat(prompt("Enter height in metres"));
+
+        alert("Your BMI is " + calculateBMI(weight, height).toFixed(1));
+    </script>
+
+</body>
+</html>

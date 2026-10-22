@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+</head>
+<body>
+
+    <p>
+        Enter First Number
+        <input id="first" oninput="add()">
+    </p>
+
+    <p>
+        Enter Second Number
+        <input id="second" oninput="add()">
+    </p>
+
+    <p>
+        Result
+        <input id="result" readonly>
+    </p>
+
+    <script>
+        function add() {
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+
+            document.getElementById("result").value = a + b;
+        }
+    </script>
+
+</body>
+</html>
